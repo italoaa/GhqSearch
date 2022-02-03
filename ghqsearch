@@ -1,0 +1,7 @@
+#!/bin/bash
+
+repo=$(ghq list | fzf)
+
+rootdir=$(ghq root)
+
+echo "$rootdir/$repo" | pbcopy
